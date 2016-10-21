@@ -1,0 +1,59 @@
+% things that may need to change
+
+ind_bin_length = 1000;
+bin_count = 5;
+bin_size = bin_count * ind_bin_length;
+fft_size = 64;
+energy_sum = zeros(1,fft_size);
+alpha = 1.05;
+beta_param = 1.02;
+total_crunch = 0;
+sample_count = 0;
+% unchanging variables
+Fs = 44100; 
+[y, Fs] = audioread('Recording.m4a');
+for i = 1:floor(length(y)/bin_size)
+
+
+    x = y((i-1)*bin_size + 1:i*bin_size);
+    
+    
+    if(total_crunch > 800)
+        total_crunch = 1;
+        energy_sum = energy_mean;
+        fprintf('Hi! \n');
+    end
+    
+    for j = 1:bin_count
+        tic;
+        sample_count = sample_count + 1;
+
+        xx = x((j-1)*ind_bin_length + 1:j*ind_bin_length);
+        xx_fft = fft(xx,fft_size);
+        xx_nrg = abs(xx_fft).^2;
+        total_crunch = total_crunch + 1;
+            energy_sum = energy_sum + xx_nrg;
+            energy_mean = energy_sum/total_crunch;
+
+        if(sum(xx_nrg > alpha*energy_mean) > floor(fft_size/12))
+            outp_array((i-1)*bin_size+1+(j-1)*ind_bin_length:(i-1)*bin_size+j*ind_bin_length) = xx;
+        else
+            outp_array((i-1)*bin_size+1+(j-1)*ind_bin_length:(i-1)*bin_size+j*ind_bin_length) = zeros(1,ind_bin_length);
+        end
+            avg_time_elapsed(sample_count) = toc;
+    end
+
+end
+
+
+figure;
+hold on;
+plot(outp_array);
+
+figure;
+hold on;
+plot(y);
+audiowrite('outp.mp4',outp_array,Fs);
+
+mean(avg_time_elapsed)/mean(average_time_elapsed)
+var(avg_time_elapsed)/var(average_time_elapsed)
