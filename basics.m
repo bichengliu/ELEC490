@@ -1,4 +1,4 @@
-%a sdf asdf asdf jasdhflk jashdfkj ahsdljfh akljsdfh
+% ITS MY TURN TO EDIT
 % things that may need to change
 bin_size = 2000;
 bin_count = 50;
