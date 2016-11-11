@@ -9,6 +9,7 @@ alpha = 2.35;
 beta_param = 1.02;
 total_crunch = 0;
 limit = 200;
+sample_count = 0;
 % unchanging variables
 Fs = 44100; 
 [y, Fs] = audioread('Recording.m4a');
@@ -40,7 +41,7 @@ for i = 1:floor(length(y)/bin_size)
         else
             outp_array((i-1)*bin_size+1+(j-1)*ind_bin_length:(i-1)*bin_size+j*ind_bin_length) = zeros(1,ind_bin_length);
         end
-            avg_time_elapsed(sample_count) = toc;
+        avg_time_elapsed(sample_count) = toc;
     end
 
 end
