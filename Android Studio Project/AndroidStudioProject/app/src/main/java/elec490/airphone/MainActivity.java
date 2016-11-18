@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Example of a call to a native method
     TextView tv = (TextView) findViewById(R.id.sample_text);
-    tv.setText(stringFromJNI());
+    tv.setText(stringFromJNI()+Integer.toString(somefunc(1,2)));
     }
 
     @Override
@@ -60,6 +60,9 @@ public class MainActivity extends AppCompatActivity {
      * which is packaged with this application.
      */
     public native String stringFromJNI();
+
+    public native int somefunc(int a, int b);
+
     // Used to load the 'native-lib' library on application startup.
     static {
         System.loadLibrary("native-lib");
