@@ -1,0 +1,413 @@
+Manifest-Version: 1.0
+Created-By: 1.7.0_111 (Oracle Corporation)
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/t6Nd
+ 4cfPRhZP44Q5QAjcC6E8kM4xWR1_1bYURRojRGc.woff2
+SHA1-Digest: Qh+r67G+NDXiwCaHglm77Lr8bDw=
+
+Name: assets/www/plugins/org.apache.cordova.file/www/ProgressEvent.js
+SHA1-Digest: rnNeXgEfu1DcDHUqC0qh+JWzBVc=
+
+Name: res/xml/config.xml
+SHA1-Digest: WY6cgf6HbFGHEjXmup0s2dbmywQ=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/t6Nd
+ 4cfPRhZP44Q5QAjcC14sYYdJg5dU2qzJEVSuta0.woff2
+SHA1-Digest: kG+j2ssvuLtl3uNVLNPFIOL0X8w=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/webpack/preview-c
+ 9ec80129c88abcaa5fe6db8840b62e0.css
+SHA1-Digest: LBzyVmJ66LEGk9jlUWEhD9jmPXc=
+
+Name: assets/www/lib/onsen/css/material-design-iconic-font/fonts/Mater
+ ial-Design-Iconic-Font.ttf
+SHA1-Digest: Aw8JrBL7hqE/dDKnWDa2dotUElc=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/images/keyboards/
+ android_r_portrait.png
+SHA1-Digest: jR2ejGcVbZfH1EQ2gk4MHUWXzUU=
+
+Name: assets/www/lib/onsen/css/material-design-iconic-font/fonts/Mater
+ ial-Design-Iconic-Font.eot
+SHA1-Digest: lgTkM/1J9b+WUBtd1kzlisEPYJE=
+
+Name: assets/www/plugins/org.apache.cordova.file/www/fileSystems.js
+SHA1-Digest: DOxH8OmgoSg/tNMIH4rRdC6LOVk=
+
+Name: assets/www/img/loading.gif
+SHA1-Digest: l+L38U8MwwvKQ3upXQIQrWyupKs=
+
+Name: assets/www/plugins/org.apache.cordova.dialogs/www/android/notifi
+ cation.js
+SHA1-Digest: pU0mCtX0A7CKMJtRFGKDkRZmO/Q=
+
+Name: assets/www/plugins/cordova-plugin-globalization/www/Globalizatio
+ nError.js
+SHA1-Digest: 6LcnycI+alUW3xikKHST310Wv3c=
+
+Name: assets/www/plugins/org.apache.cordova.file-transfer/www/FileTran
+ sfer.js
+SHA1-Digest: gczkoxvyzAGkqjRb9ygPamJpZ/A=
+
+Name: assets/www/plugins/org.apache.cordova.dialogs/www/notification.j
+ s
+SHA1-Digest: fAg4d8dMui+0J7OVjqcG+Ys5NSU=
+
+Name: assets/www/img/press.png
+SHA1-Digest: ajxjr/cJsa0+wmo1oa1b5cYlKzU=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/fontawesome
+ -webfont.svg
+SHA1-Digest: sGtcj2f9YyzcYqM7Yq5PdBlBMbM=
+
+Name: assets/_where-is-www.txt
+SHA1-Digest: avAF2z5NXxA7dhGqngRyQ0ETAG0=
+
+Name: assets/www/lib/onsen/css/material-design-iconic-font/fonts/Mater
+ ial-Design-Iconic-Font.woff2
+SHA1-Digest: buTHk3LD/WeXBjBu3kfksDz1PWA=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/UX6i
+ 4JxQDm3fVTc1CPuwqoX0hVgzZQUfRDuZrPvH3D8.woff2
+SHA1-Digest: XrMV5+frMcLiZEKPmTMKWXnM+JE=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/index.html
+SHA1-Digest: mw7jJYYq6AcP/oA8ZJwsYHHuk1M=
+
+Name: assets/www/cordova.js
+SHA1-Digest: xLKbSo2TnYxgFY7+Lz/NSGyXWYo=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/isZ-
+ wbCXNKAbnjo6_TwHToX0hVgzZQUfRDuZrPvH3D8.woff2
+SHA1-Digest: GH+4T1oxRVzksRfxfqAZ0wMtHVM=
+
+Name: assets/www/lib/onsen/css/onsenui.css
+SHA1-Digest: kU176E78M7UslKnZD+oP3JCMPdk=
+
+Name: assets/www/plugins/org.apache.cordova.file/www/FileUploadOptions
+ .js
+SHA1-Digest: LLask/31czIhUqxzVULkUIwoyKQ=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/_VYF
+ x-s824kXq_Ul2BHqYH-_kf6ByYO6CLYdB4HQE-Y.woff2
+SHA1-Digest: dp6lqa+hLBA63Um8zXkhH3CXOGg=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/K23c
+ xWVTrIFD6DJsEVi07RkAz4rYn47Zy2rvigWQf6w.woff2
+SHA1-Digest: VOhn8OIec/Ulu3bDOC9j9IdGoAM=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/images/gestures/d
+ own.png
+SHA1-Digest: bfz4hy/s2YdKAwvHfmIENxW7+ec=
+
+Name: assets/www/plugins/org.apache.cordova.file/www/File.js
+SHA1-Digest: bEuT31HoTEe0T96QNxh2Rc5wEfY=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/images/gestures/h
+ old.png
+SHA1-Digest: ajNbqB07ONkZCl9PefHMFbVmen8=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/css/roboto.css
+SHA1-Digest: KB+uYgeCTiW9xQBW+HDM4SSbKB4=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/images/keyboards/
+ android_r_landscape.png
+SHA1-Digest: bb4jFTi44WL2c7bDKRkk4S/W6Cw=
+
+Name: assets/www/css/index.css
+SHA1-Digest: Nka16lPAscuEiM7ZowFO3QNKsSM=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/77FX
+ FjRbGzN4aCrSFhlh3oX0hVgzZQUfRDuZrPvH3D8.woff2
+SHA1-Digest: f0HCfM/wFtTzzcTRT/tdd2UAROY=
+
+Name: resources.arsc
+SHA1-Digest: aofI3yN4TKxXWImLjKZ1sPGKcQc=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/cDKh
+ RaXnQTOVbaoxwdOr9xkAz4rYn47Zy2rvigWQf6w.woff2
+SHA1-Digest: Z/DV0b6hsLIDEOL+u8lQnGF/fC0=
+
+Name: assets/www/lib/onsen/js/onsenui.min.js
+SHA1-Digest: 6Q8u1eZQWftgvqkp+GHTBZCsZek=
+
+Name: assets/www/lib/onsen/css/material-design-iconic-font/fonts/Mater
+ ial-Design-Iconic-Font.woff
+SHA1-Digest: +FdbpbVR0cIHfyAD3ScsCOC/kWg=
+
+Name: AndroidManifest.xml
+SHA1-Digest: G8VfhN/CpfT2liDs4W3crhFHm9M=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/images/splash.png
+SHA1-Digest: JUJ65EqEWrcUFs3oJC1CXoIlz/4=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/images/devices/go
+ ogle_pixel.png
+SHA1-Digest: 8oDYEMqcXZt4yM3TcvpqcMKWiY4=
+
+Name: res/drawable-xxhdpi/icon.png
+SHA1-Digest: dWS0VWpG9LEqN8WTfAN5C8EDHkQ=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/tnj4
+ SB6DNbdaQnsM8CFqBX-_kf6ByYO6CLYdB4HQE-Y.woff2
+SHA1-Digest: YgpdB4kmsKEsEEV5qqda8gdGthA=
+
+Name: assets/www/js/bundle.js
+SHA1-Digest: jlWCHNWj1LQdg67hiV+SwjhPCYk=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/images/keyboards/
+ android_n_portrait.png
+SHA1-Digest: 5AVY/v2kijpnQTwoGtT2n6tCvKc=
+
+Name: assets/www/lib/onsen/css/material-design-iconic-font/fonts/Mater
+ ial-Design-Iconic-Font.svg
+SHA1-Digest: hVexVRuRoNuj6mJztKrZiIWud6w=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/oMMg
+ fZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2
+SHA1-Digest: qGiJpLwDnMqZj8AlWpvtWFSfnBA=
+
+Name: assets/www/img/splash.png
+SHA1-Digest: FzYMVzhsm5oPvL96LAcP+w7OJc4=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/images/gestures/l
+ eft.png
+SHA1-Digest: s5wn/7HrjOSKAmO4YF2028SIqyg=
+
+Name: assets/www/plugins/org.apache.cordova.file/www/FileReader.js
+SHA1-Digest: en+sXlarkWCDSDDHK4SiUdSzzok=
+
+Name: assets/www/lib/onsen/css/onsen-css-components.css
+SHA1-Digest: T2y0Off77PPN9+lZVsj8SjO4wgo=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/images/workspace/
+ staticmap_zh-CN.png
+SHA1-Digest: jFECQRiCEUTbspZMN5n/AnEvHCI=
+
+Name: classes.dex
+SHA1-Digest: ZI0kE4w9V8ODXDqpIl7WRbCneTE=
+
+Name: assets/www/cordova_plugins.js
+SHA1-Digest: HZw2qRgy+DKKCqgJr2GYjFIe2pc=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/css/font-awesome.
+ min.css
+SHA1-Digest: bNt633ZuDLOv2RQ9R4Q9kdzG4gU=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/images/17/174398/
+ raw_1477429929.jpeg
+SHA1-Digest: 184tUVg1rSdLMsGrbYUjUg5RS7Y=
+
+Name: res/drawable/icon.png
+SHA1-Digest: dWS0VWpG9LEqN8WTfAN5C8EDHkQ=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/images/devices/pl
+ aceholder
+SHA1-Digest: 2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/NJ4v
+ xlgWwWbEsv18dAhqnn-_kf6ByYO6CLYdB4HQE-Y.woff2
+SHA1-Digest: LTAVJF4/xiQQ9DAbspRNmyGhnNs=
+
+Name: assets/www/plugins/org.apache.cordova.file/www/Entry.js
+SHA1-Digest: WdMsSSmj1cR6HQgALJf1hokwmRM=
+
+Name: assets/www/plugins/org.apache.cordova.file/www/FileError.js
+SHA1-Digest: PeZ8ZcVk1t40ofTgylaIY0pdv4Y=
+
+Name: assets/www/plugins/org.apache.cordova.file/www/FileWriter.js
+SHA1-Digest: FkRhhMFSyhN4K4rpd5dfDUIZlgQ=
+
+Name: assets/www/lib/onsen/css/material-design-iconic-font/css/materia
+ l-design-iconic-font.css
+SHA1-Digest: /FaQtS6VoqTLFlLSVUolujDWcNg=
+
+Name: assets/www/plugins/org.apache.cordova.file/www/FileUploadResult.
+ js
+SHA1-Digest: zwdSIDUwbK8ndwvhEWXSGOq9whQ=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/d-6I
+ YplOFocCacKzxwXSOJBw1xU1rKptJj_0jans920.woff2
+SHA1-Digest: WfOn3FROw391mDsZ0Dvx74BJG8o=
+
+Name: assets/www/plugins/org.apache.cordova.file/www/DirectoryEntry.js
+SHA1-Digest: S9Kv13l5mvEpUrxldpTFXfmgdNM=
+
+Name: assets/www/plugins/org.apache.cordova.file/www/android/FileSyste
+ m.js
+SHA1-Digest: U7oappTFR3UlVHc04uvne1Rrfi0=
+
+Name: assets/www/plugins/org.apache.cordova.file/www/FileSystem.js
+SHA1-Digest: 10ZnqehdLWl2W6cPxds2HQ2SPFs=
+
+Name: res/drawable-mdpi/icon.png
+SHA1-Digest: dWS0VWpG9LEqN8WTfAN5C8EDHkQ=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/PwZc
+ -YbIL414wB9rB1IAPYX0hVgzZQUfRDuZrPvH3D8.woff2
+SHA1-Digest: J7250uNMkj8o0Kq07ZM5boDky4Q=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/images/gestures/u
+ p.png
+SHA1-Digest: Wb1LZZdNS82IyhxbcG3dnqFoDjk=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/images/keyboards/
+ placeholder
+SHA1-Digest: 2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+
+Name: assets/www/plugins/org.chromium.zip/zip.js
+SHA1-Digest: Uy7ex9EDnxG3aq4lYOzCn6c41zs=
+
+Name: assets/www/plugins/cordova-plugin-globalization/www/globalizatio
+ n.js
+SHA1-Digest: EGEaXcvNnxw3mlc2WqkXYlUVTTI=
+
+Name: assets/www/plugins/org.apache.cordova.file/www/Flags.js
+SHA1-Digest: 0Uu8pBiwVbmhGmpeoPn3cqiu6h4=
+
+Name: res/drawable-xxxhdpi/icon.png
+SHA1-Digest: dWS0VWpG9LEqN8WTfAN5C8EDHkQ=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/images/keyboards/
+ android_n_landscape.png
+SHA1-Digest: RnlNTupQD1dKMTdhWIQv42Njgx8=
+
+Name: assets/www/plugins/org.apache.cordova.file/www/DirectoryReader.j
+ s
+SHA1-Digest: bkiWOzW7lYdtV1vP9fHtqETS1aY=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/Ks_c
+ VxiCiwUWVsFWFA3Bjn-_kf6ByYO6CLYdB4HQE-Y.woff2
+SHA1-Digest: iAlP5tbn77ydIIfbry01aVZMWRo=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/uYEC
+ MKoHcO9x1wdmbyHIm3-_kf6ByYO6CLYdB4HQE-Y.woff2
+SHA1-Digest: YLEwfdtKeT9pRjGmgnVbamCfI2c=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/vSzu
+ lfKSK0LLjjfeaxcREhkAz4rYn47Zy2rvigWQf6w.woff2
+SHA1-Digest: I5eC5IpcweapBDy3Cl0kA6Q1QmI=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/sTda
+ A6j0Psb920Vjv-mrzH-_kf6ByYO6CLYdB4HQE-Y.woff2
+SHA1-Digest: HEy0LoEUSXT01k1W8XgHmkAfldM=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/t6Nd
+ 4cfPRhZP44Q5QAjcC1BW26QxpSj-_ZKm_xT4hWw.woff2
+SHA1-Digest: ul2kNROaScmridqHar3R2+Yrx+4=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/images/workspace/
+ staticmap_en.png
+SHA1-Digest: vsnkoZvScPJ8Dk+vkDFOOEnbpTo=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/1hZf
+ 02POANh32k2VkgEoUBkAz4rYn47Zy2rvigWQf6w.woff2
+SHA1-Digest: O0g67/l9LrxABCe3j+APnq4U3w0=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/t6Nd
+ 4cfPRhZP44Q5QAjcC_ZraR2Tg8w2lzm7kLNL0-w.woff2
+SHA1-Digest: Loa5ujFqo6OYgOr1sjNOvG03cT8=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/t6Nd
+ 4cfPRhZP44Q5QAjcC9DiNsR5a-9Oe_Ivpu8XWlY.woff2
+SHA1-Digest: 0DiW3mMw9m3Ca9VSHammcc+VM5Y=
+
+Name: assets/www/plugins/org.apache.cordova.file/www/LocalFileSystem.j
+ s
+SHA1-Digest: OXzRBSHsTSb29j8Zc6VHcSH2TqY=
+
+Name: assets/www/index.html
+SHA1-Digest: AVX+08jbBPoRdebkpU18pnAXETM=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/assets/sharing-dc
+ 8bb4572c26e97b73bdd7b9fe67fafd.js
+SHA1-Digest: 02XpyTP4dS601PNvicvpJ5qMd70=
+
+Name: assets/www/plugins/org.apache.cordova.file/www/Metadata.js
+SHA1-Digest: 3X0WnYr1p+kjMYGY2pxkwdxmFKY=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/images/devices/go
+ ogle_pixel_land.png
+SHA1-Digest: PlhrPf5AFJnmYoffjLsdIYwxJKk=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/t6Nd
+ 4cfPRhZP44Q5QAjcC4gp9Q8gbYrhqGlRav_IXfk.woff2
+SHA1-Digest: XXvzekFq6giRkks2//Hcx/1z1y0=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/images/gestures/r
+ ight.png
+SHA1-Digest: jxpYf4sEchOi9XkH6fGPp0I9DKc=
+
+Name: assets/www/plugins/org.apache.cordova.file/www/fileSystems-roots
+ .js
+SHA1-Digest: K9aJU3LkfaxdugP5+JFBMbq8gaY=
+
+Name: assets/www/plugins/org.apache.cordova.file/www/fileSystemPaths.j
+ s
+SHA1-Digest: fFmezgVuxL5AIpsUpleVhnd2K3Y=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/webpack/preview-1
+ 443813d8284be6370d2.js
+SHA1-Digest: bUuCgr3+C8K5qDR/XLwmtoc27UQ=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/OpXU
+ qTo0UgQQhGj_SFdLWBkAz4rYn47Zy2rvigWQf6w.woff2
+SHA1-Digest: aYMw/y6uAJRh5fas8vy1RU1+KWw=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/97ua
+ hxiqZRoncBaCEI3aW4X0hVgzZQUfRDuZrPvH3D8.woff2
+SHA1-Digest: 8yihi18R3xLFu0y4jVnUHvuf9jU=
+
+Name: assets/www/plugins/org.apache.cordova.file/www/requestFileSystem
+ .js
+SHA1-Digest: SL6nNpQB+uTGaI4s15UoIx4Aea4=
+
+Name: assets/www/plugins/org.apache.cordova.file/www/resolveLocalFileS
+ ystemURI.js
+SHA1-Digest: BunYZYgPDtzvcDO/RRZRAQUcrfM=
+
+Name: res/drawable-xhdpi/icon.png
+SHA1-Digest: dWS0VWpG9LEqN8WTfAN5C8EDHkQ=
+
+Name: assets/www/lib/onsen/css/material-design-iconic-font/css/materia
+ l-design-iconic-font.min.css
+SHA1-Digest: LitetuCPDz0R/gral8liojumoNk=
+
+Name: assets/www/plugins/org.apache.cordova.file/www/FileEntry.js
+SHA1-Digest: lRZQEnVEg2zd976jRKtem1u4dC8=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/assets/sharing-2c
+ f6e2bf815880b74f35c662a4539c65.css
+SHA1-Digest: bARVNleKsJGbdW11ziV9wBaMpQU=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/t6Nd
+ 4cfPRhZP44Q5QAjcCwt_Rm691LTebKfY2ZkKSmI.woff2
+SHA1-Digest: JRa+B6IKw5VKV2grSh28LMZLmA0=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/vPcy
+ nSL0qHq_6dX7lKVByXYhjbSpvc47ee6xR_80Hnw.woff2
+SHA1-Digest: Zb7IVVcCe1G3wuiNtRPn4qEMjig=
+
+Name: assets/www/plugins/org.apache.cordova.file-transfer/www/FileTran
+ sferError.js
+SHA1-Digest: b10cuLvwFtGnyb0d1DnHl1qdAm4=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/jSN2
+ CGVDbcVyCnfJfjSdfIX0hVgzZQUfRDuZrPvH3D8.woff2
+SHA1-Digest: ni8D1KbOIfLr8BUNlls84JBFcpc=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/roboto/WxrX
+ Ja0C3KdtC7lMafG4dRkAz4rYn47Zy2rvigWQf6w.woff2
+SHA1-Digest: q1kF9mt2qahFN7OAB2+bJIZomXI=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/fonts/fontawesome
+ -webfont.woff
+SHA1-Digest: SjE+uTuVnMQVTGhLkVsKMd22jYQ=
+
+Name: assets/www/p8521799EF61477426811181-1479483975/images/logo-lg.sv
+ g
+SHA1-Digest: LkF56M9oxn8hTi0VbmD1s1KdDQQ=
+
+Name: res/drawable-hdpi/icon.png
+SHA1-Digest: dWS0VWpG9LEqN8WTfAN5C8EDHkQ=
+

@@ -1,0 +1,27 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: p8521799EF614774268111811479483975.apk
+compressionType: false
+doNotCompress:
+- arsc
+- eot
+- woff
+- woff2
+- assets/www/p8521799EF61477426811181-1479483975/images/devices/placeholder
+- assets/www/p8521799EF61477426811181-1479483975/images/keyboards/placeholder
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '7'
+  targetSdkVersion: '21'
+sharedLibrary: false
+unknownFiles: {}
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.2.1
+versionInfo:
+  versionCode: '100'
+  versionName: 0.1.0

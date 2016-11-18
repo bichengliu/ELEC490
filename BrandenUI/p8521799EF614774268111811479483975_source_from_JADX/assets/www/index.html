@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>MockingBot</title>
+  </head>
+  <body>
+    <div id="app">
+    </div>
+
+    <div id="splash" class="full_screen">
+      <img src="./img/splash.png" alt="splash screen" class="full" />
+      <img src="./img/loading.gif" alt="loading spinner" class="splash__loading" />
+    </div>
+
+    <div id="hint" class="full_screen hint hide">
+      <img src="img/press.png" alt="press" class="hint__img" />
+      <h1 class="hint__text i18n" data-i18n="hint"></h1>
+      <button class="hint__btn i18n" id="hintBtn" data-i18n="gotIt"></button>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/onsen/js/onsenui.min.js"></script>
+    <script type="text/javascript" src="js/bundle.js"></script>
+  </body>
+</html>
