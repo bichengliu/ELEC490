@@ -60,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
      * which is packaged with this application.
      */
     public native String stringFromJNI();
-
     // Used to load the 'native-lib' library on application startup.
     static {
         System.loadLibrary("native-lib");
