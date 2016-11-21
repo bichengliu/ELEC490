@@ -5,6 +5,8 @@
 extern "C"
 int addtwonum(int a, int b);
 
+extern "C"
+double multpi(int a, int b);
 
 extern "C"
 jstring
@@ -12,7 +14,7 @@ Java_elec490_airphone_MainActivity_stringFromJNI(
         JNIEnv* env,
         jobject /* this */) {
     std::ostringstream val;
-    val << addtwonum(4,2);
+    val << multpi(4,2);
     std::string hello = "Hello from C++, the output is: " + val.str();
     return env->NewStringUTF(hello.c_str());
 }
@@ -28,5 +30,12 @@ extern "C"
 int addtwonum(int a, int b)
 {
     int c = a + b;
+    return c;
+}
+
+extern "C"
+double multpi(int a, int b)
+{
+    double c = addtwonum(a,b)*3.14;
     return c;
 }
