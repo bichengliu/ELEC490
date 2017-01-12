@@ -1,0 +1,16 @@
+<resources>
+    <string name="ToggleButton">ToggleButton</string>
+    <string name="app_name">AirPhone</string>
+    <string name="help">Help</string>
+    <string name="line1">DISCLAIMER:</string>
+    <string name="line2">AirPhone is a tool to assist, not a preventative measure.</string>
+    <string name="line3">Always remain aware of your surroundings.</string>
+    <string name="helpMessage">AirPhone is a selective noise-cancelling app designed to help protect pedestrians whille they enjoy their music.</string>
+
+    <string name="button0_info">Minimum threshold setting for AirPhone algorithm</string>
+    <string name="button1_info">Standard threshold setting for AirPhone algorithm</string>
+    <string name="button2_info">Highest threshold settings for AirPhone algorithm</string>
+    <string name="help_info">Link to help page for AirPhone</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
