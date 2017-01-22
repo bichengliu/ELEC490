@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.elec490.airphone3.MainActivity"
+    android:background="@drawable/background">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp">
+
+        <RadioButton
+            android:id="@+id/radio_low"
+            android:button="@null"
+            android:drawableEnd="@drawable/tree_icon"
+            android:background="@drawable/my_button"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="9dp"
+            android:paddingStart="9dp"
+
+            android:onClick="onRadioButtonClicked" />
+        <Space
+            android:layout_width="35dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:id="@+id/radio_medium"
+            android:button="@null"
+            android:drawableEnd="@drawable/building_icon"
+            android:background="@drawable/my_button"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="13dp"
+            android:paddingStart="13dp"
+
+            android:onClick="onRadioButtonClicked"/>
+        <Space
+            android:layout_width="35dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:id="@+id/radio_high"
+            android:button="@null"
+            android:drawableEnd="@drawable/alert_icon"
+            android:background="@drawable/my_button"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="2dp"
+            android:paddingStart="2dp"
+
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:text="@string/line1"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="18sp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+
+        android:shadowColor="@color/colorAccent"
+        android:shadowRadius="50"
+        android:shadowDy="0"
+        android:shadowDx="0"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="@string/line2"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="16sp"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="95dp"
+        android:layout_height="wrap_content"
+        android:layout_width="215dp"
+        android:layout_centerHorizontal="true"
+
+        android:shadowColor="@color/colorAccent"
+        android:shadowRadius="50"
+        android:shadowDy="0"
+        android:shadowDx="0"/>
+
+    <ImageButton
+        android:id="@+id/button"
+        android:contentDescription="@string/help_info"
+        android:gravity="center"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+
+        android:background="@drawable/round_button"
+        android:src="@drawable/help_icon"
+        android:onClick="helpButton"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:text="@string/line3"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:gravity="center"
+
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="133dp"
+        android:layout_centerHorizontal="true"
+
+        android:shadowColor="@color/colorAccent"
+        android:shadowRadius="50"
+        android:shadowDy="0"
+        android:shadowDx="0"/>
+
+    <TextView
+        android:id="@+id/button_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+</RelativeLayout>
