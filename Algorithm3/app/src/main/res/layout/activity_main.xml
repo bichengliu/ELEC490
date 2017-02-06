@@ -77,7 +77,7 @@
         android:layout_height="wrap_content"
 
         android:shadowColor="@color/colorAccent"
-        android:shadowRadius="50"
+        android:shadowRadius="25"
         android:shadowDy="0"
         android:shadowDx="0"
         />
@@ -97,7 +97,7 @@
         android:layout_centerHorizontal="true"
 
         android:shadowColor="@color/colorAccent"
-        android:shadowRadius="50"
+        android:shadowRadius="25"
         android:shadowDy="0"
         android:shadowDx="0"/>
 
@@ -132,7 +132,7 @@
         android:layout_centerHorizontal="true"
 
         android:shadowColor="@color/colorAccent"
-        android:shadowRadius="50"
+        android:shadowRadius="25"
         android:shadowDy="0"
         android:shadowDx="0"/>
 

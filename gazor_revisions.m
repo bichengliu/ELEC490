@@ -22,7 +22,6 @@ for i = 1:floor(length(y)/bin_size)
     if(total_crunch > limit)
         total_crunch = 1;
         energy_sum = energy_mean;
-        fprintf('Hi! \n');
     end
     
     for j = 1:bin_count
@@ -50,11 +49,17 @@ end
 figure;
 hold on;
 plot(outp_array);
+xlabel('time');
+ylabel('amplitude');
+title('Output of Algorithm Visualized as a Soundwave');
 
 figure;
 hold on;
 plot(y);
+title('Original Soundfile');
+xlabel('time');
+ylabel('amplitude');
 audiowrite('outp.mp4',outp_array,Fs);
 
-mean(avg_time_elapsed)/mean(average_time_elapsed)
-var(avg_time_elapsed)/var(average_time_elapsed)
+relative_mean_runtime = mean(avg_time_elapsed)/mean(average_time_elapsed)
+relative_var_runtime = var(avg_time_elapsed)/var(average_time_elapsed)

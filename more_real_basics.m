@@ -76,11 +76,20 @@ end
 
 figure;
 hold on;
+plot(y);
+xlabel('Time');
+ylabel('Ampltude');
+
+figure;
+hold on;
 plot(outp_array);
-plot(threshold_array,'r');
+xlabel('Time');
+ylabel('Ampltude');
 
 figure;
 hold on;
 plot(y);
 plot(threshold_array,'r');
+xlabel('Time');
+ylabel('Ampltude');
 audiowrite('outp.mp4',outp_array,Fs);

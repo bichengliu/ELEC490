@@ -29,6 +29,21 @@ extern "C"
 int decision(double *avg_array, double *in, int size_in);
 
 extern "C"
+jint
+Java_elec490_airphone_MainActivity_algorithm( JNIEnv* env, float data[], float alpha)
+{
+    double fftoutput[] = {0, 0, 0, 0, 0, 0, 0, 0}; // this holds fft output
+    double data[] = {1, 1, 1, 1, 0, 0, 0, 0};
+    double nrg_array[] = {0,0,0,0,0,0,0,0};
+    double nrg_avg_array[] = {0,0,0,0,0,0,0,0};
+    jint j;
+    my_fft(fftoutput, data, 8); //find fft energy directly
+    nrg_sum(nrg_array, fftoutput, 8); // find energy sums
+    nrg_avg(nrg_avg_array, nrg_array, 8, 1); // hold historical average
+    j = decision(nrg_avg_array, fftoutput, 8); // returns decision from algorithm
+    return j;
+}
+extern "C"
 jstring
 Java_elec490_airphone_MainActivity_stringFromJNI(
         JNIEnv* env,

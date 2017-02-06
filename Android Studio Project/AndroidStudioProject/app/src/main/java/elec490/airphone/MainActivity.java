@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
     public native int somefunc(int a, int b);
 
+    public native int algorithm(float data[], float alpha);
     // Used to load the 'native-lib' library on application startup.
     static {
         System.loadLibrary("native-lib");
