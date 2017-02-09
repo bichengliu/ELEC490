@@ -32,23 +32,104 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DisplayHelpMessage.class);
         startActivity(intent);
     }
-    private static int fft_size = 1024;
-    private static int outputSizeDiff = 8;
+    private static int fft_size = 512; //this has to be smaller than 1792 for the current architecture
+    private static int outputSizeDiff = 6;
     private static int recording_size = 7680;
-    private static int outputSize = fft_size*outputSizeDiff;
+    private static int commonBuffer = 1792;
+    private static int outputSize = commonBuffer*outputSizeDiff;
     private double crunch = 0.0;
     private int thresh = 15;
     private static double pi = Math.PI;
     private double[] nrg_array = new double[fft_size];
     private double[] nrg_avg_array = new double[fft_size];
     private int btn = 0;
+    private int first = 0;
     private double lowThresh = 1.05;
     private double mediumThresh = 1.1;
     private double highThresh = 1.2;
     TestThread button_algo = new TestThread();
-    short[] recordings = new short[fft_size];
+    short[] recordings = new short[commonBuffer];
     short[] audioOutputs = new short[outputSize];
+    short[] historicalAudio = new short[outputSize];
+    private int iteration = 0;
 
+    void recordAudioLonger(final short[] audioInput) {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                boolean mShouldContinue = true; // Indicates if recording / playback should stop
+                int SAMPLE_RATE = 44100;
+                Process.setThreadPriority(Process.THREAD_PRIORITY_AUDIO);
+
+                // buffer size in bytes
+                int bufferSize = AudioRecord.getMinBufferSize(SAMPLE_RATE,
+                        AudioFormat.CHANNEL_IN_MONO,
+                        AudioFormat.ENCODING_PCM_16BIT);
+
+                if (bufferSize == AudioRecord.ERROR || bufferSize == AudioRecord.ERROR_BAD_VALUE) {
+                    bufferSize = SAMPLE_RATE * 2;
+                }
+
+                short[] audioBuffer = new short[outputSize];
+                AudioRecord record = new AudioRecord(MediaRecorder.AudioSource.DEFAULT, SAMPLE_RATE,
+                        AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT, bufferSize);
+
+                if (record.getState() != AudioRecord.STATE_INITIALIZED) {
+                    Log.e(TAG, "Audio Record can't initialize!");
+                    return;
+                }
+                record.startRecording();
+
+                Log.v(TAG, "Start recording");
+
+                long shortsRead = 0;
+                while (mShouldContinue) {
+                    int numberOfShort = record.read(audioBuffer, 0, audioBuffer.length);
+                    shortsRead += numberOfShort;
+
+                    if(shortsRead >= outputSize)
+                        mShouldContinue = false;
+                }
+
+
+                for(int i = 0; i < outputSize; i++)
+                    audioInput[i] = audioBuffer[i];
+                //trackOldAudio(audioBuffer);
+                record.stop();
+                record.release();
+
+                Log.v(TAG, String.format("Long Recording stopped. Samples read: %d", shortsRead));
+            }
+        }).start();
+    }
+
+    public void startup(double[] populate_nrg_array, double[] populate_nrg_avg_array) {
+        for (int i = 0; i < fft_size; i++) {
+            populate_nrg_array[i] = 0;
+            populate_nrg_avg_array[i] = 0;
+        }
+    }
+
+
+    public void trackOldAudio(short[] audio){
+        if(iteration < outputSizeDiff - 2){
+            for(int i = iteration*commonBuffer; i < commonBuffer*(iteration+1);i++){
+                historicalAudio[i] = audio[i-commonBuffer*iteration];
+            }
+            iteration++;
+        }
+
+        else{
+            for(int i = 0;i < outputSize-commonBuffer*iteration;i++){
+                historicalAudio[i] = historicalAudio[commonBuffer*(iteration+1)+1];
+            }
+            for(int i = commonBuffer*(iteration-1);i<commonBuffer*iteration;i++){
+                historicalAudio[i] = audio[i-commonBuffer*(iteration-1)];
+            }
+        }
+
+
+    }
     public void onRadioButtonClicked(View view) {
 
 
@@ -56,8 +137,13 @@ public class MainActivity extends AppCompatActivity {
         double[] data = new double[fft_size];
         for (int i = 0; i < fft_size; i++) {
             data[i] = 0;
-        }
-
+        }/*
+        if(first == 0) {
+            for (int i = 0; i < outputSize; i++) {
+                historicalAudio[i] = 0;
+            }
+            first = 1;
+        }*/
         boolean checked = ((RadioButton) view).isChecked();
 
         switch (view.getId()) {
@@ -140,13 +226,14 @@ public class MainActivity extends AppCompatActivity {
                     int numberOfShort = record.read(audioBuffer, 0, audioBuffer.length);
                     shortsRead += numberOfShort;
 
-                    if(shortsRead >= fft_size)
+                    if(shortsRead >= commonBuffer)
                         mShouldContinue = false;
                 }
 
 
                 for(int i = 0; i < fft_size; i++)
                     audioInput[i] = audioBuffer[i];
+                //trackOldAudio(audioBuffer);
                 record.stop();
                 record.release();
 
@@ -154,6 +241,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }).start();
     }
+
 
 
     AudioTrack mAudioTrack = new AudioTrack(AudioManager.STREAM_MUSIC, SAMPLE_RATE,
@@ -189,18 +277,17 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    public void startup(double[] populate_nrg_array, double[] populate_nrg_avg_array) {
-        for (int i = 0; i < fft_size; i++) {
-            populate_nrg_array[i] = 0;
-            populate_nrg_avg_array[i] = 0;
-        }
-    }
+
 
     public int algorithm(short[] data, double alpha) {
 
         int decision_value;
         double fftoutput[] = new double[fft_size];
-        my_fft(fftoutput, data);
+        short fftinput[] = new short[fft_size];
+        for(int i = 0; i < fft_size; i++){
+            fftinput[i] = data[i];
+        }
+        my_fft(fftoutput, fftinput);
         nrg_sum(nrg_array, fftoutput);
 
         if(crunch > 500){
@@ -291,8 +378,8 @@ public class MainActivity extends AppCompatActivity {
                         int dec = algorithm(recordings, lowThresh);
                         if (dec == 1) {
                             for (int i = 0; i < outputSizeDiff; i++) {
-                                for(int j = 0; j < fft_size; j++){
-                                    audioOutputs[fft_size*i+j] = recordings[j];
+                                for(int j = 0; j < commonBuffer; j++){
+                                    audioOutputs[commonBuffer*i+j] = (short)(2*recordings[j]);
                                 }
                             }
                             playAudio(audioOutputs);
@@ -303,8 +390,8 @@ public class MainActivity extends AppCompatActivity {
                         int dec = algorithm(recordings, mediumThresh);
                         if (dec == 1) {
                             for (int i = 0; i < outputSizeDiff; i++) {
-                                for(int j = 0; j < fft_size; j++){
-                                    audioOutputs[fft_size*i+j] = recordings[j];
+                                for(int j = 0; j < commonBuffer; j++){
+                                    audioOutputs[commonBuffer*i+j] = (short)(2*recordings[j]);
                                 }
                             }
                             playAudio(audioOutputs);
@@ -315,15 +402,15 @@ public class MainActivity extends AppCompatActivity {
                         int dec = algorithm(recordings, highThresh);
                         if (dec == 1) {
                             for (int i = 0; i < outputSizeDiff; i++) {
-                                for(int j = 0; j < fft_size; j++){
-                                    audioOutputs[fft_size*i+j] = recordings[j];
+                                for(int j = 0; j < commonBuffer; j++){
+                                    audioOutputs[commonBuffer*i+j] = (short)(2*recordings[j]);
                                 }
                             }
                             playAudio(audioOutputs);
                         }
                     }
 
-                    Thread.sleep(5);
+                    Thread.sleep(1);
 
                 } catch (InterruptedException e) {}
             }
