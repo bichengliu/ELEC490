@@ -33,12 +33,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     private static int fft_size = 512; //this has to be smaller than 1792 for the current architecture
-    private static int outputSizeDiff = 6;
+    private static int outputSizeDiff = 8;
     private static int recording_size = 7680;
     private static int commonBuffer = 1792;
     private static int outputSize = commonBuffer*outputSizeDiff;
     private double crunch = 0.0;
-    private int thresh = 15;
+    private int thresh = 30;
     private static double pi = Math.PI;
     private double[] nrg_array = new double[fft_size];
     private double[] nrg_avg_array = new double[fft_size];
@@ -377,34 +377,41 @@ public class MainActivity extends AppCompatActivity {
                         recordAudio(recordings);
                         int dec = algorithm(recordings, lowThresh);
                         if (dec == 1) {
-                            for (int i = 0; i < outputSizeDiff; i++) {
-                                for(int j = 0; j < commonBuffer; j++){
-                                    audioOutputs[commonBuffer*i+j] = (short)(2*recordings[j]);
+                            for (int i = 0; i < outputSize; i++) {
+                                if(i % 50 < 1) {
+                                    audioOutputs[i] = (short) (150000);
+                                }
+                                else{
+                                    audioOutputs[i] = 0;
                                 }
                             }
                             playAudio(audioOutputs);
                         }
-                    }
+
+                        }
+
                     if(btn == 2) {
                         recordAudio(recordings);
                         int dec = algorithm(recordings, mediumThresh);
                         if (dec == 1) {
-                            for (int i = 0; i < outputSizeDiff; i++) {
-                                for(int j = 0; j < commonBuffer; j++){
-                                    audioOutputs[commonBuffer*i+j] = (short)(2*recordings[j]);
+                            for (int i = 0; i < outputSize; i++) {
+                                if(i % 50 < 1) {
+                                    audioOutputs[i] = (short) (150);
+                                }
+                                else{
+                                    audioOutputs[i] = 0;
                                 }
                             }
                             playAudio(audioOutputs);
+
                         }
                     }
                     if(btn == 3) {
                         recordAudio(recordings);
                         int dec = algorithm(recordings, highThresh);
                         if (dec == 1) {
-                            for (int i = 0; i < outputSizeDiff; i++) {
-                                for(int j = 0; j < commonBuffer; j++){
-                                    audioOutputs[commonBuffer*i+j] = (short)(2*recordings[j]);
-                                }
+                            for (int i = 0; i < outputSize; i++) {
+                                audioOutputs[i] = (short)(150);
                             }
                             playAudio(audioOutputs);
                         }
