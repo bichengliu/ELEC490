@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     private static int commonBuffer = 1792;
     private static int outputSize = commonBuffer*outputSizeDiff;
     private double crunch = 0.0;
-    private int thresh = 30;
+    private int thresh = 100;
     private static double pi = Math.PI;
     private double[] nrg_array = new double[fft_size];
     private double[] nrg_avg_array = new double[fft_size];
@@ -52,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
     short[] audioOutputs = new short[outputSize];
     short[] historicalAudio = new short[outputSize];
     private int iteration = 0;
+
+
 
     void recordAudioLonger(final short[] audioInput) {
         new Thread(new Runnable() {
@@ -370,21 +372,20 @@ public class MainActivity extends AppCompatActivity {
             while(true)
             {
                 if(!keepRunning) break;
-
+                for (int i = 0; i < outputSize; i++) {
+                    if(i % 50 < 1) {
+                        audioOutputs[i] = (short) (1500);
+                    }
+                    else{
+                        audioOutputs[i] = 0;
+                    }
+                }
                 try
                 {
                     if(btn == 1){
                         recordAudio(recordings);
                         int dec = algorithm(recordings, lowThresh);
                         if (dec == 1) {
-                            for (int i = 0; i < outputSize; i++) {
-                                if(i % 50 < 1) {
-                                    audioOutputs[i] = (short) (150000);
-                                }
-                                else{
-                                    audioOutputs[i] = 0;
-                                }
-                            }
                             playAudio(audioOutputs);
                         }
 
@@ -394,14 +395,7 @@ public class MainActivity extends AppCompatActivity {
                         recordAudio(recordings);
                         int dec = algorithm(recordings, mediumThresh);
                         if (dec == 1) {
-                            for (int i = 0; i < outputSize; i++) {
-                                if(i % 50 < 1) {
-                                    audioOutputs[i] = (short) (150);
-                                }
-                                else{
-                                    audioOutputs[i] = 0;
-                                }
-                            }
+
                             playAudio(audioOutputs);
 
                         }
@@ -410,9 +404,6 @@ public class MainActivity extends AppCompatActivity {
                         recordAudio(recordings);
                         int dec = algorithm(recordings, highThresh);
                         if (dec == 1) {
-                            for (int i = 0; i < outputSize; i++) {
-                                audioOutputs[i] = (short)(150);
-                            }
                             playAudio(audioOutputs);
                         }
                     }
