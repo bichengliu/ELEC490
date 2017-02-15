@@ -6,6 +6,7 @@ import android.media.AudioManager;
 import android.media.AudioRecord;
 import android.media.AudioTrack;
 import android.media.MediaRecorder;
+import android.media.ToneGenerator;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Process;
@@ -33,12 +34,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     private static int fft_size = 512; //this has to be smaller than 1792 for the current architecture
-    private static int outputSizeDiff = 8;
+    private static int outputSizeDiff = 12;
     private static int recording_size = 7680;
     private static int commonBuffer = 1792;
     private static int outputSize = commonBuffer*outputSizeDiff;
     private double crunch = 0.0;
-    private int thresh = 100;
+    private int thresh = 85;
     private static double pi = Math.PI;
     private double[] nrg_array = new double[fft_size];
     private double[] nrg_avg_array = new double[fft_size];
@@ -374,12 +375,13 @@ public class MainActivity extends AppCompatActivity {
                 if(!keepRunning) break;
                 for (int i = 0; i < outputSize; i++) {
                     if(i % 50 < 1) {
-                        audioOutputs[i] = (short) (1500);
+                        audioOutputs[i] = (short) (10000);
                     }
                     else{
                         audioOutputs[i] = 0;
                     }
                 }
+
                 try
                 {
                     if(btn == 1){
